@@ -4,21 +4,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cellule1.5 HTML</title>
 	<style>
 		.box {
 			height: 180px;
-			font-weight: 500;
+			font-size: 10;
 			display: flex;
-			flex: 1;
-			flex-direction: row;
-			justify-content: start;
+			flex-grow: 1;
 			align-items: center;
-			flex-wrap: wrap;
-			border: 1px solid slategray;
+			border: 2px solid rgb(0, 0, 0);
 		}
 		.container {
-			margin: 20px 10% 20px 10%
+			margin: 20px
 		}
 	</style>
 </head>
@@ -26,8 +22,8 @@
 	<div class="container">
 		<hr>
 		<div style="display: flex;">
-			<div class="box" style="background-color: aquamarine;">First cell lorem poem ipsum</div>
-			<div class="box" style="background-color: blanchedalmond;">Second cell lorem poem ipsum</div>
+			<div class="box" style="background-color: rgb(65, 189, 86); border-right: 1px solid slategray;">First cell</div>
+			<div class="box" style="background-color: rgb(199, 138, 87); border-left: 1px solid slategray;">Second cell</div>
 		</div>
 	</div>
 </body>
