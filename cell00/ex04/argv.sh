@@ -1,7 +1,7 @@
 if [ "$#" -eq 0 ]; then
 	echo "No arguments supplied"
 else
-	for i in $(seq $1 $3); do
-		echo $i
-	done
+	echo $1
+	echo $2
+	echo $3
 fi
