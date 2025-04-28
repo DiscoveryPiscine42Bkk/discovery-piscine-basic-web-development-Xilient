@@ -3,16 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h1 style="color:white; font-size:160px; text-align: center;">-so bigger!-</h1>
+    <title>Basics</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        img{
+            width: 330px;
+            height: 300px;
+        }
+        #p2{
+            margin-left: 30px;
+        }
+        footer{
+            text-align: right;
+            font: italic;
+            font-family: monospace, Arial;
+        }
+    </style>
+    
 </head>
-<body style="background-color: pink">
-    <center><img src="https://i.ebayimg.com/images/g/DXEAAOSwFUhngenI/s-l1600.webp" width="340" height="300">
-        <img src="https://i.ebayimg.com/images/g/DdEAAeSwe2Rn-rPy/s-l1600.webp" width="340" height="300"></center>
-        <center><div>https://www.ebay.com/itm/405470695340?mkcid=16</div>
-        <div>https://www.ebay.com/itm/306242439694</div></center>
-    <br>
-    <hr style="margin-bottom: 0%;">
-    <p style="text-align: right; font-style: italic; font-family: monospace;">© ausphath 2025</p>
+<body>
+    <header>
+        <h1 style="color:white; font-size:160px; text-align: center;">-so bigger!-</h1>
+    </header>
+
+    <main>
+        <div>
+            <img id="img1"src="https://i.ebayimg.com/images/g/DXEAAOSwFUhngenI/s-l1600.webp">
+            <a href="https://www.ebay.com/itm/405470695340?mkcid=16"><p id="p1">https://www.ebay.com/itm/405470695340?mkcid=16</p></a>
+            
+            
+        </div>
+        <div>    
+            <img id="img2"src="https://i.ebayimg.com/images/g/DdEAAeSwe2Rn-rPy/s-l1600.webp" >
+            <a href="https://www.ebay.com/itm/306242439694"><p id="p2">https://www.ebay.com/itm/306242439694</p></a>
+        </div>
+    </main>
+
+    <footer>
+        <hr style="width: auto;">
+        <p>© ausphath 2025</p>
+    </footer>
 </body>
 </html>
