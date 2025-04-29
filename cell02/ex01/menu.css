@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin: auto;
+}
+label{
+    font-size: 30px;
+    text-align: center;
+}
+select{
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+option{
+    font-size: 20px;
+}
