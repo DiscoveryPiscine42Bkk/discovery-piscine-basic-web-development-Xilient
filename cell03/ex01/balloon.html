@@ -17,16 +17,26 @@
 		const colors = ['#FF0000', '#00FF00', '#0000FF'];
 		let ci = 0;
 		window.onload = () => {
-			const ball = document.getElementById('balloon');
+			const balloon = document.getElementById('balloon');
 			setCircleSize(size, ci);
-			ball.addEventListener('click', () => setCircleSize(size + 10, ++ci));
-			ball.addEventListener('mouseleave', () => setCircleSize(size - 5, --ci));
+			balloon.addEventListener('click', () => setCircleSize(size + 10, ++ci));
+			balloon.addEventListener('mouseleave', () => setCircleSize(size - 5, --ci));
 		}
 		function setCircleSize(newSize, nci) {
-			const ball = document.getElementById('balloon');
-			style = ball.style;
-			size = newSize > 420 || newSize < 200 ? 200 : newSize;
-			ci = (nci < 0) ? colors.length - 1 : (nci > colors.length - 1) ? 0 : nci;
+			const balloon = document.getElementById('balloon');
+			style = balloon.style;
+			if ((newSize > 420) || (newSize <200)){
+				newSize = 200;
+			}else{
+				size = newSize
+			}
+			if (nci < 0) {
+				ci = colors.length - 1;
+			} else if (nci > colors.length - 1) {
+				ci = 0;
+			} else {
+				ci = nci;
+			}
 			style.width = size + 'px';
 			style.height = size + 'px';
 			style.borderRadius = size / 2 + 'px';
