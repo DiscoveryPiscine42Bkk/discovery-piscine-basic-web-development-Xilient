@@ -1,4 +1,4 @@
-.parallax-up {
+.parallax {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/963/985/309/kobe-bryant-wallpaper-preview.jpg");
 	min-height: 100vh; 
 	background-attachment: fixed;
@@ -6,26 +6,20 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	/* fonts */
 	text-align: center;
 	color: white;
+
+  }
+#parallax1{
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/963/985/309/kobe-bryant-wallpaper-preview.jpg");
 	font-size: 50px;
 	padding: 25%;
-  }
-.parallax-down {
+}
+#parallax2{
 	background-image: url("https://pbs.twimg.com/media/EfQUWBuVAAAnLPL.jpg:large");
-	min-height: 100vh; 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-	/* fonts */
-	text-align: center;
-	color: white;
 	font-size: 50px;
 	padding: 50%;
-  }
+}
 #div1{
 	text-align: center;
 	padding: 50%;
