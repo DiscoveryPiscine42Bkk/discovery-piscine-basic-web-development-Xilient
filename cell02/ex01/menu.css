@@ -4,8 +4,11 @@ h1{
 div{
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 img{
+    height: 100px;
+    width: 200px;
     margin: auto;
 }
 label{
