@@ -25,18 +25,8 @@
 		function setCircleSize(newSize, nci) {
 			const balloon = document.getElementById('balloon');
 			style = balloon.style;
-			if ((newSize > 420) || (newSize <200)){
-				newSize = 200;
-			}else{
-				size = newSize
-			}
-			if (nci < 0) {
-				ci = colors.length - 1;
-			} else if (nci > colors.length - 1) {
-				ci = 0;
-			} else {
-				ci = nci;
-			}
+			size = newSize > 420 || newSize < 200 ? 200 : newSize;
+			ci = nci < 0 ? colors.length - 1 : nci > colors.length -1 ? 0 : nci
 			style.width = size + 'px';
 			style.height = size + 'px';
 			style.borderRadius = size / 2 + 'px';
