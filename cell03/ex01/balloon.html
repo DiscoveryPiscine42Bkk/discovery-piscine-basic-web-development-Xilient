@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <style>
+        #balloon{
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+    <script>
+		let size = 200;
+		const colors = ['#FF0000', '#00FF00', '#0000FF'];
+		let ci = 0;
+		window.onload = () => {
+			const ball = document.getElementById('balloon');
+			setCircleSize(size, ci);
+			ball.addEventListener('click', () => setCircleSize(size + 10, ++ci));
+			ball.addEventListener('mouseleave', () => setCircleSize(size - 5, --ci));
+		}
+		function setCircleSize(newSize, nci) {
+			const ball = document.getElementById('balloon');
+			style = ball.style;
+			size = newSize > 420 || newSize < 200 ? 200 : newSize;
+			ci = (nci < 0) ? colors.length - 1 : (nci > colors.length - 1) ? 0 : nci;
+			style.width = size + 'px';
+			style.height = size + 'px';
+			style.borderRadius = size / 2 + 'px';
+			style.backgroundColor = colors[ci];
+		}
+	</script>
+</head>
+<body>
+    <div id="balloon"></div>
+    
+</body>
+</html>
