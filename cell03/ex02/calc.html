@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoke that calculus</title>
+    <style>
+        div{
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 40%;
+        }
+    </style>
+    <script>
+		window.onload = () => {
+			setInterval(() => {
+				alert('Please, use me...');
+			}, 30 * 1000);
+		}
+		function calculate() {
+			let result;
+			const n1 = parseFloat(document.getElementById('number1').value);
+			const n2 = parseFloat(document.getElementById('number2').value);
+			const signEl = document.getElementById('sign');
+			const sign = signEl.options[signEl.selectedIndex].value;
+			if (!Number.isInteger(n1) ||
+				!Number.isInteger(n2) ||
+				n1 < 0 ||
+				n2 < 0) {
+				alert("Error '(");
+				return;
+			}
+			if (sign === '+') {
+				result = n1 + n2
+			} else if (sign === '-') {
+				result = n1 - n2
+			} else if (sign === '*') {
+				result = n1 * n2
+			} else if (sign === '%' && n2 === 0) {
+				result = "It's over 9000!";
+			} else if (sign === '/' && n2 === 0) {
+				result = "It's over 9000!";
+			}  else if (sign === '/') {
+				result = n1 / n2
+			} else {
+				result = n1 % n2
+			}
+			console.log(result);
+			alert(result);
+		}
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" name="number1" id="number1" placeholder="number">
+            <select name="sign" id="sign">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input type="text" name="number2" id="number2" placeholder="number">
+        <button onclick="calculate()">Try me!</button>
+    </div>
+</body>
+</html>
