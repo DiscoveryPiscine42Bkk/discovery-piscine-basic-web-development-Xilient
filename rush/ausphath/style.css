@@ -1,0 +1,39 @@
+.nav{
+    text-align: center;
+}
+.page{
+    width: auto;
+    border: 10px solid rgb(219, 159, 159);
+    overflow:auto;
+}
+#profile{
+    background-color: rgb(255, 221, 250);
+}
+#profession{
+    background-color: rgb(206, 223, 255);
+}
+#contact{
+    background-color: rgb(196, 255, 225);
+}
+#contact_img{
+    margin-top: 50%;
+}
+.imageContainer{
+    height: 100vh;
+    position: inherit;
+    display: flex;
+    justify-content: end;
+    border: 5px solid black;
+}
+.imageContainer img{
+    height: 50%;
+    object-fit: cover;
+    border: 5px dashed purple;
+}
+.intro{
+    font-size: 100px;
+}
+.icon{
+	height: 30px;
+	width: 30px;
+}
